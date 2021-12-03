@@ -12,14 +12,17 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
+
 	var coffee Structs.Coffee
 	jsonInput, err := ioutil.ReadFile("resources/coffee.json")
 	checkError(err)
 	json.Unmarshal(jsonInput, &coffee)
+
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		responseString := generateCoffeeOrder(coffee)
 		fmt.Fprint(writer, responseString)
 	})
+
 	server := http.Server{
 		Addr: ":8082",
 	}
@@ -41,7 +44,7 @@ func getRandomElement(array []string) string {
 }
 
 func generateCoffeeOrder(coffee Structs.Coffee) string {
-	i := rand.Intn(2)
+	i := rand.Intn(3)
 	switch i {
 	case 1:
 		return fmt.Sprintf(
@@ -51,6 +54,19 @@ func generateCoffeeOrder(coffee Structs.Coffee) string {
 			getRandomElement(coffee.Types),
 			getRandomElement(coffee.Modifiers),
 			getRandomElement(coffee.Condiments),
+			getRandomElement(coffee.Condiments),
+		)
+	case 2:
+		return fmt.Sprintf("I'd like %s %s %s %s, mix them together with %s %s, add %s, and garnish with %s and %s %s.",
+			getRandomElement(coffee.Quantities),
+			getRandomElement(coffee.SizesPlural),
+			getRandomElement(coffee.Roasts),
+			getRandomElement(coffee.TypesPlural),
+			getRandomElement(coffee.Modifiers),
+			getRandomElement(coffee.Condiments),
+			getRandomElement(coffee.Condiments),
+			getRandomElement(coffee.Condiments),
+			getRandomElement(coffee.Modifiers),
 			getRandomElement(coffee.Condiments),
 		)
 	default:

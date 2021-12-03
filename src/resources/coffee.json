@@ -1,0 +1,10 @@
+{
+  "Roasts": [ "light", "dark", "medium", "decaf" ],
+  "Modifiers": [ "no","extra", "light", "heavy" ],
+  "Types": [ "coffee", "iced coffee", "mocha", "cappuccino", "aged milk", "slurm", "amerricano", "gava" ],
+  "TypesPlural": [ "coffees", "mochas", "cappuccinos", "aged milks", "slurms", "amerricanos", "gavas" ],
+  "Condiments": [ "sugar", "kale", "whipped cream", "no calorie sweetener", "extra calorie sweetener", "mint", "ice", "cocaine" ],
+  "Sizes": [ "small", "medium", "large", "bucket of", "venti", "grande" ],
+  "SizesPlural": [ "small", "medium", "large", "buckets of", "venti", "grande" ],
+  "Quantities": [ "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" ]
+}

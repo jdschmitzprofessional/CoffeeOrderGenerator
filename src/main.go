@@ -1,16 +1,17 @@
 package main
 
 import (
-	"Tour/Structs"
+	"CoffeeOrderGenerator/Structs"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
-	//"time"
+	"time"
 )
 
 func main() {
+	rand.Seed(time.Now().UnixNano())
 	var coffee Structs.Coffee
 	jsonInput, err := ioutil.ReadFile("resources/coffee.json")
 	checkError(err)

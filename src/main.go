@@ -45,8 +45,8 @@ func getRandomElement(array []string) string {
 
 func generateCoffeeOrder(coffee Structs.Coffee) string {
 	i := rand.Intn(3)
-	switch i {
-	case 1:
+	switch {
+	case i == 1:
 		return fmt.Sprintf(
 			"I'd like a %s %s %s with %s %s and %s",
 			getRandomElement(coffee.Roasts),
@@ -56,7 +56,7 @@ func generateCoffeeOrder(coffee Structs.Coffee) string {
 			getRandomElement(coffee.Condiments),
 			getRandomElement(coffee.Condiments),
 		)
-	case 2:
+	case i == 2:
 		return fmt.Sprintf("I'd like %s %s %s %s, mix them together with %s %s, add %s, and garnish with %s and %s %s.",
 			getRandomElement(coffee.Quantities),
 			getRandomElement(coffee.SizesPlural),

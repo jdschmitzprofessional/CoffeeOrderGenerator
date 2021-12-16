@@ -1,9 +1,9 @@
 {
   "Roasts": [ "light", "dark", "medium", "decaf" ],
-  "Modifiers": [ "no","extra", "light", "heavy" ],
-  "Types": [ "coffee", "iced coffee", "mocha", "cappuccino", "aged milk", "slurm", "amerricano", "gava" ],
-  "TypesPlural": [ "coffees", "mochas", "cappuccinos", "aged milks", "slurms", "amerricanos", "gavas" ],
-  "Condiments": [ "sugar", "kale", "whipped cream", "no calorie sweetener", "extra calorie sweetener", "mint", "ice", "cocaine" ],
+  "Modifiers": [ "no","extra", "light", "heavy", "a spritz of", "minced", "sprinkes of", "a flush of", "a sprig of", "a zest of", "zest with", "twist with", "a twist of", "blend with", "a blend of", "a pinch of", "shaved", "a shave of", "powdered" ],
+  "Types": [ "coffee", "iced coffee", "mocha", "cappuccino", "aged milk", "slurm", "amerricano", "gava", "hot chocolate" ],
+  "TypesPlural": [ "coffees", "mochas", "cappuccinos", "aged milks", "slurms", "americanos", "gavas" ],
+  "Condiments": [ "sugar", "kale", "whipped cream", "no calorie sweetener", "extra calorie sweetener", "mint", "ice", "cocaine", "sprinkles", "caocao", "peach", "avocado" ],
   "Sizes": [ "small", "medium", "large", "bucket of", "venti", "grande" ],
   "SizesPlural": [ "small", "medium", "large", "buckets of", "venti", "grande" ],
   "Quantities": [ "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten" ]
